@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #22A699; -fx-border-color: #F29727; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isikenes.musiccomposerfx.Controller">
+   <Label layoutX="164.0" layoutY="100.0" text="Instrument:">
+      <font>
+         <Font name="Consolas" size="32.0" />
+      </font>
+   </Label>
+   <Label layoutX="164.0" layoutY="200.0" text="Duration:">
+      <font>
+         <Font name="Consolas" size="32.0" />
+      </font>
+   </Label>
+   <Slider fx:id="durationSlider" layoutX="419.0" layoutY="209.0" max="300.0" min="10.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #F29727;" value="155.0" />
+   <Button layoutX="328.0" layoutY="402.0" mnemonicParsing="false" onAction="#Compose" style="-fx-background-color: #F29727;" text="Compose">
+      <font>
+         <Font name="Consolas" size="28.0" />
+      </font>
+   </Button>
+   <Label layoutX="164.0" layoutY="300.0" text="Tempo:">
+      <font>
+         <Font name="Consolas" size="32.0" />
+      </font>
+   </Label>
+   <Slider fx:id="tempoSlider" layoutX="419.0" layoutY="309.0" max="200.0" min="100.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #F29727;" value="150.0" />
+   <ChoiceBox fx:id="instrumentCB" layoutX="419.0" layoutY="97.0" prefHeight="35.0" prefWidth="200.0" style="-fx-font-size: 24; -fx-font-family: Consolas; -fx-background-color: #F29727;" />
+   <Button fx:id="saveButton" layoutX="351.0" layoutY="493.0" mnemonicParsing="false" onAction="#Save" style="-fx-background-color: #F29727;" text="Save">
+      <font>
+         <Font name="Consolas" size="28.0" />
+      </font>
+   </Button>
+</AnchorPane>
